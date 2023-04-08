@@ -1,0 +1,79 @@
+const express = require('express')
+const app = express()
+
+const products = [
+    { id: 1, name: 'Coca Cola', price: 19 },
+    { id: 2, name: 'Pepsi', price: 19 },
+    { id: 3, name: 'Fernet', price: 40 },
+]
+
+app.use(express.json())
+
+app.get('/api/products', (req, res) => {
+    // res.send({ products })
+    res.json({ products })
+})
+
+app.get('/api/products/:id', (req, res) => {
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+})
+
+app.post('/api/products', (req, res) => {
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    const product = req.body
+    products.push(product)
+    res.json({ products })
+})
+
+app.put('/api/products/:id', (req, res) => {
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+})
+
+app.delete('/api/products/:id', (req, res) => {
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+    //TODO
+})
+
+app.listen(8080, () => console.log('Server Up'))
